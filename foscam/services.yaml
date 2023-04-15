@@ -1,0 +1,120 @@
+enable_motion_detection:
+  description: Enable motion detection for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+disable_motion_detection:
+  description: Disable motion detection for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+enable_night_vision:
+  description: Enable night vision for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+disable_night_vision:
+  description: Disable night vision for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+sleep:
+  description: Put Foscam camera to sleep.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+wake:
+  description: Wake up Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+config_motion_detection:
+  description: Configure Motion Detection for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    linkage:
+      description: "(Template) BITCODE to perform when motion is detected. bit0:Ring, bit1:Send mail, bit2:Snap picture, bit3:Record, bit4:IO out, bit5:Snap to cloud, bit6:Record to cloud, bit7:Push message to the phone"
+      example: 100
+    sensitivity:
+      description: "(Template) Sensitivity of the Motion Detection, 0:Low, 1:Medium, 2:High, 3:Lower, 4:Lowest"
+      example: 1
+    snap_interval:
+      description: "(Template) Interval in seconds to capture images when motion is detected"
+      example: 3
+    trigger_interval:
+      description: "(Template) Interval in seconds between motion detection triggers"
+      example: 5
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+custom_command:
+  description: Custom Command for Foscam Camera
+  fields:
+    entity_id:
+      description: Name(s) of entity.
+      example: "camera.living_room_camera"
+    custom_command:
+      description: "Custom Command for Foscam Camera. See Foscam CLI for details"
+      example: "setMotionDetectConfig"
+    params_string:
+      description: "Json string of parameters for custom command. Must have double quotes"
+      example: '{"isEnable": 1, "linkage": 100, "sensitivity": 1, "snapInterval": 5, "triggerInterval": 10}'
+    timeout:
+      description: (Optional) Tmeout in seconds for request
+      example: 3
+
+ptz:
+  description: Pan/Tilt service for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entities to move.
+      example: "camera.living_room_camera"
+    movement:
+      description: "Direction of the movement. Allowed values: up, down, left, right, top_left, top_right, bottom_left, bottom_right."
+      example: "up"
+    travel_time:
+      description: "(Optional) Travel time in seconds. Allowed values: float from 0 to 1. Default: 0.125"
+      example: 0.125
+
+ptz_preset:
+  description: PTZ Preset service for Foscam camera.
+  fields:
+    entity_id:
+      description: Name(s) of entities to move.
+      example: "camera.living_room_camera"
+    preset_name:
+      description: "The name of the preset to move to.  Presets can be created from within the official Foscam apps."
+      example: "TopMost"

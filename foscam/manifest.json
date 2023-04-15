@@ -1,0 +1,9 @@
+{
+  "domain": "foscam",
+  "name": "Foscam",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/foscam",
+  "requirements": [],
+  "codeowners": ["@skgsergio"],
+  "version": "1.0.0"
+}
