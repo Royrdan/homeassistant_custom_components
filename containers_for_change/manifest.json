@@ -1,0 +1,9 @@
+{
+	"domain": "containers_for_change",
+	"name": "Containers for Change",
+	"documentation": "https://github.com/royrdan/",
+	"dependencies": [],
+	"codeowners": ["@royrdan"],
+	"requirements": [],
+    "version": "1.0.0"
+}

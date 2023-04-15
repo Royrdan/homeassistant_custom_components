@@ -1,0 +1,6 @@
+book_collection:
+  description: Book a collection with Containers for Change
+  fields:
+    bags:
+      description: (Required) How many bags are to be collected
+      example: 3
