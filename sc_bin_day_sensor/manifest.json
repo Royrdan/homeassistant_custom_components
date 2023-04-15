@@ -1,0 +1,10 @@
+{
+  "domain": "sc_bin_day_sensor",
+  "name": "Bin Day Sensor",
+  "documentation": "https://github.com/nowhere",
+  "dependencies": [],
+  "codeowners": ["royrdan"],
+  "requirements": ["beautifulsoup4==4.9.3"],
+  "config_flow": false,
+  "version": "0.0.1"
+}
