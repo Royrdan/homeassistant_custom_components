@@ -1,0 +1,13 @@
+{
+  "domain": "asx_tracker",
+  "name": "ASX Tracker",
+  "documentation": "https://github.com/nowhere",
+  "dependencies": [],
+  "codeowners": ["royrdan"],
+  "requirements": [
+      "requests",
+      "beautifulsoup4"
+  ],
+  "config_flow": false,
+  "version": "0.0.1"
+}
